@@ -20,5 +20,16 @@ public class Profesor {
         predmeti.add(predmet);
         norma=norma+predmet.getBroj_casova_godisnje();
     }
-
+    public String getIme() {
+        return ime;
+    }
+    public String getPrezime() {
+        return prezime;
+    }
+    public List<Predmet> getPredmeti() {
+        return predmeti;
+    }
+    public int getNorma() {
+        return norma;
+    }
 }
