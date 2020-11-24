@@ -15,6 +15,14 @@ public class Student {
         studentovi_predmeti.put(predmet,1);
     }
 
+    public int dajSumuECTS_bodova (){
+        int suma=0;
+        for(Map.Entry<Predmet,Integer> predmeti : studentovi_predmeti.entrySet()){
+            suma=suma+predmeti.getKey().getECTS_bodovi();
+        }
+        return suma;
+    }
+
 
 
 
