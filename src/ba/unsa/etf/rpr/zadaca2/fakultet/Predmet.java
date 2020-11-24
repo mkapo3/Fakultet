@@ -7,6 +7,16 @@ public class Predmet {
     private Profesor profesor;
     private int broj_casova_godisnje;
 
+    public Predmet(String naziv_predmeta, Integer ECTS_bodovi, boolean obaveznsost_predmeta,
+                   Profesor profesor, Integer broj_casova_godisnje) {
+        this.naziv_predmeta = naziv_predmeta;
+        this.ECTS_bodovi = ECTS_bodovi;
+        this.obaveznost_predmeta = obaveznost_predmeta;
+        this.profesor=profesor;
+        this.broj_casova_godisnje=broj_casova_godisnje;
+    }
+
+
     public Integer getBroj_casova_godisnje() {
         return broj_casova_godisnje;
     }
