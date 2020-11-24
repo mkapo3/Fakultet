@@ -7,4 +7,28 @@ public class Predmet {
     private Profesor profesor;
     private int broj_casova_godisnje;
 
+    public Integer getBroj_casova_godisnje() {
+        return broj_casova_godisnje;
+    }
+
+    public Integer getECTS_bodovi() {
+        return ECTS_bodovi;
+    }
+
+    public String getNaziv_predmeta() {
+        return naziv_predmeta;
+    }
+
+    public void setProfesor(Profesor profesor) {
+        this.profesor = profesor;
+    }
+
+    public Profesor getProfesor() {
+        return profesor;
+    }
+
+    public boolean jeliPredmetObavezan() {
+        return obaveznost_predmeta;
+    }
+
 }
