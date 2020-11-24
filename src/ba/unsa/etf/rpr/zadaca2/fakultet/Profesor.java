@@ -16,4 +16,9 @@ public class Profesor {
         norma=predmeti.stream().map(Predmet::getBroj_casova_godisnje).
                 reduce(0 , (a,b) -> a+b);
     }
+    public void dodajPredmetProfesoru(Predmet predmet){
+        predmeti.add(predmet);
+        norma=norma+predmet.getBroj_casova_godisnje();
+    }
+
 }
