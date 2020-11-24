@@ -11,7 +11,9 @@ public class Student {
     private Integer broj_indeksa;
     private HashMap<Predmet, Integer> studentovi_predmeti;
 
-
+    public void dodajPredmetStudentu(Predmet predmet){
+        studentovi_predmeti.put(predmet,1);
+    }
 
 
 
