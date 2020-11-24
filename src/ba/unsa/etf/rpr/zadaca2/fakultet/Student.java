@@ -22,7 +22,12 @@ public class Student {
         }
         return suma;
     }
-
+    public void upisiOcjenu(Predmet predmet, Integer ocjena){
+        studentovi_predmeti.replace(predmet,ocjena);
+    }
+    public List<Integer> dajPrepisOcjena (){
+        return new ArrayList<Integer>(studentovi_predmeti.values());
+    }
 
 
 
